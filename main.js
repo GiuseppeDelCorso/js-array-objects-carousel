@@ -18,6 +18,6 @@ const slide = [
 
 slide.forEach((element,index,array )=> {
     
-    console.log(element,index,array);
+    console.log(element.immagine);
 
 });
