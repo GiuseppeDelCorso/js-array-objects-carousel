@@ -1,7 +1,7 @@
-let immagineCorrente = 0;
-const immagini = document.querySelectorAll("#container img");
+
 /**immagini[immagineCorrente].classList.add("active")**/
 
+let immagineAttiva = 1;
 
 
 const slide = [
@@ -24,14 +24,6 @@ const slide = [
 
 ]
 
-let container = document.getElementById("Container")
-console.log(slide[0].immagine)
-console.log(slide[0].titolo)
-console.log(slide[0].sottotitolo)
-
-container.innerHTML = "<img src="+slide[0].immagine+" width='600' height='400'/>"
-titolo.innerHTML = slide[0].titolo
-sottotitolo.innerHTML = slide[0].sottotitolo
 
 
 
@@ -43,7 +35,7 @@ sottotitolo.innerHTML = slide[0].sottotitolo
     container.innerHTML = "<img src="+element.immagine+" width='600' height='400'/>"
     titolo.innerHTML = "<p>"+element.titolo+"</p>"
     sottotitolo.innerHTML = element.sottotitolo
-   
+    
     
     
     
@@ -51,10 +43,20 @@ sottotitolo.innerHTML = slide[0].sottotitolo
     console.log(element.titolo);
     console.log(element.sottotitolo);
     
-});
+});***/
+
 
 document.getElementById("avanti").addEventListener("click",function(){
-
     
+    immagineAttiva--
 
-});**/
+    let container = document.getElementById("Container")
+    console.log(slide[immagineAttiva].immagine)
+    console.log(slide[immagineAttiva].titolo)
+    console.log(slide[immagineAttiva].sottotitolo)
+    
+    container.innerHTML = "<img src="+slide[immagineAttiva].immagine+" width='600' height='400'/>"
+    titolo.innerHTML = slide[immagineAttiva].titolo
+    sottotitolo.innerHTML = slide[immagineAttiva].sottotitolo
+    
+});
