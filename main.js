@@ -20,7 +20,7 @@ slide.forEach((element,index,array )=> {
     
     let container = document.getElementById("imgContainer")
 
-    container.innerHTML += element.immagine
+    container.innerHTML = "<img src="+element.immagine+" width='100' height='25'/>"
     
     console.log(element.immagine);
     console.log(element.titolo);
