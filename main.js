@@ -30,7 +30,7 @@ console.log(slide[0].titolo)
 console.log(slide[0].sottotitolo)
 
 container.innerHTML = "<img src="+slide[0].immagine+" width='600' height='400'/>"
-titolo.innerHTML = "<p>"+slide[0].titolo+"</p>"
+titolo.innerHTML = slide[0].titolo
 sottotitolo.innerHTML = slide[0].sottotitolo
 
 
