@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-#container{
+#Container{
     width: 700px;
     height: 400px;
     margin: 0 auto;
@@ -23,4 +23,17 @@
 }
 #container img.active{
     display: block;
+}
+#titolo{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    left: 800px;
+    bottom: 80px;
+}
+#sottotitolo{
+    position: relative;
+    font-size: 20px;
+    left: 800px;
+    bottom: 80px;
 }
