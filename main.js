@@ -24,7 +24,18 @@ const slide = [
 
 ]
 
-slide.forEach((element,index,array )=> {
+let container = document.getElementById("Container")
+console.log(slide[0].immagine)
+console.log(slide[0].titolo)
+console.log(slide[0].sottotitolo)
+
+container.innerHTML = "<img src="+slide[0].immagine+" width='600' height='400'/>"
+titolo.innerHTML = "<p>"+slide[0].titolo+"</p>"
+sottotitolo.innerHTML = slide[0].sottotitolo
+
+
+
+/**slide.forEach((element,index,array )=> {
     
     let container = document.getElementById("Container")
     let titolo =  document.getElementById("titolo")
@@ -33,15 +44,17 @@ slide.forEach((element,index,array )=> {
     titolo.innerHTML = "<p>"+element.titolo+"</p>"
     sottotitolo.innerHTML = element.sottotitolo
    
-   document.getElementById("avanti").addEventListener("click",function(){
-
-        slide.index++;
-   })
-
-
-
+    
+    
+    
     console.log(element.immagine);
     console.log(element.titolo);
     console.log(element.sottotitolo);
-
+    
 });
+
+document.getElementById("avanti").addEventListener("click",function(){
+
+    
+
+});**/
